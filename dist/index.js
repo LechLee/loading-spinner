@@ -1,5 +1,5 @@
-import { Loader as a, loading as d } from "./components/ui/loader.js";
+/* empty css              */import { Loader as d, loading as e } from "./components/ui/loader.js";
 export {
-  a as Loader,
-  d as loading
+  d as Loader,
+  e as loading
 };
