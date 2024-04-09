@@ -1,1 +1,1 @@
-export { loading, Loader } from './components/ui/loader'
+export { loading, Loader } from './components'
