@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "esnext",
+		"baseUrl": "./",
+		"moduleResolution": "node",
+		"jsx": "react-jsx",
+		"strict": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"declarationDir": "./dist/types",
+		"paths": {
+			"@/*": ["src/*"],
+			"@docs/*": ["docs/*"]
+		},
+		"outDir": "dist"
+	}
+}

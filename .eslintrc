@@ -1,0 +1,134 @@
+{
+	"parser": "@typescript-eslint/parser", // Specifies the ESLint parser
+	"parserOptions": {
+		"ecmaVersion": 2020, // Allows for the parsing of modern ECMAScript features
+		"sourceType": "module" // Allows for the use of imports
+	},
+	"globals": {
+		"_": true
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"plugins": ["@typescript-eslint", "import"],
+	"extends": ["plugin:react/recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+	"rules": {
+		"@typescript-eslint/no-var-requires": 0,
+		"@typescript-eslint/explicit-module-boundary-types": 0,
+		"@typescript-eslint/no-explicit-any": 0,
+		"@typescript-eslint/no-this-alias": 0,
+		"@typescript-eslint/no-empty-function": 0,
+		"@typescript-eslint/no-empty-interface": 0,
+		"quotes": [1, "single"],
+		"no-console": 0,
+		//debugger allowane
+		"no-invalid-this": 0,
+		"no-debugger": 1,
+		"no-var": 1,
+		"no-param-reassign": 0,
+		//manatory semicolon for new line
+		"no-irregular-whitespace": 0,
+		"no-trailing-spaces": 1,
+		"no-unused-vars": 0,
+		"no-underscore-dangle": 0,
+		"no-alert": 1,
+		"no-lone-blocks": 0,
+		"no-class-assign": 1,
+		//no assignment in condition statement
+		"no-cond-assign": 1,
+		"no-const-assign": 1,
+		"no-delete-var": 1,
+		"no-dupe-keys": 1,
+		"no-duplicate-case": 1,
+		"no-dupe-args": 1,
+		"no-empty": 1,
+		//no duplicate function declaration
+		"no-func-assign": 1,
+		"no-redeclare": 1,
+		"no-spaced-func": 1,
+		"no-this-before-super": 1,
+		"no-undef": 1,
+		"no-use-before-define": 1,
+		"no-extra-boolean-cast": 0,
+		"no-unreachable": 2,
+		"no-mixed-spaces-and-tabs": 0,
+		"no-restricted-syntax": 0,
+		"semi": 0,
+		"import/extensions": 0,
+		//file ends up with single new line
+		"eol-last": 0,
+		"camelcase": 1,
+		"jsx-quotes": [1, "prefer-double"],
+		"react/display-name": 0,
+		//forbiden some kind of propTypes
+		"react/forbid-prop-types": [
+			1,
+			{
+				"forbid": ["any"]
+			}
+		],
+		"react/jsx-boolean-value": 1,
+		"react/jsx-closing-bracket-location": 1,
+		"react/jsx-curly-spacing": [
+			1,
+			{
+				"when": "never",
+				"children": true
+			}
+		],
+		//validate the indents of props in JSX file
+		"react/jsx-indent-props": 0,
+		"react/jsx-key": 0,
+		// limit the max number props in a single
+		"react/jsx-max-props-per-line": [
+			1,
+			{
+				"maximum": 5
+			}
+		],
+		"react/jsx-no-bind": 0,
+		"react/jsx-no-duplicate-props": 1,
+		"react/jsx-no-literals": 0,
+		"react/jsx-no-undef": 1,
+		"react/jsx-pascal-case": 0,
+		"react/jsx-sort-props": 0,
+		"react/jsx-uses-react": 1,
+		"react/jsx-uses-vars": 1,
+		"react/no-danger": 0,
+		"react/no-did-mount-set-state": 1,
+		"react/no-did-update-set-state": 1,
+		"react/no-direct-mutation-state": 1,
+		"react/no-multi-comp": 0,
+		"react/no-set-state": 0,
+		"react/no-unknown-property": 1,
+		"react/prefer-es6-class": 1,
+		"react/prop-types": 2,
+		"react/react-in-jsx-scope": 0,
+		"react/self-closing-comp": 0,
+		//mandatory order for component self-functions
+		"react/sort-comp": 0,
+
+		"react/no-array-index-key": 0,
+		"react/no-deprecated": 1,
+		"react/jsx-equals-spacing": 1,
+
+		"comma-dangle": 1,
+
+		"prefer-arrow-callback": 0,
+		"arrow-parens": 0,
+		//expecting space around array =>
+		"arrow-spacing": 1,
+		"linebreak-style": 0,
+		"import/no-extraneous-dependencies": 0,
+		"import/newline-after-import": 0,
+		"react/jsx-props-no-spreading": 0,
+		"css-ruleorselectorexpected": 0
+	}
+}
