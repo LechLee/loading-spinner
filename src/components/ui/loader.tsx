@@ -42,12 +42,12 @@ const Loader = () => {
 	}
 
 	return (
-		<div id="loading-spinner" className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+		<div id="loading-spinner" className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black opacity-50" style={{ zIndex: 9999 }}>
 			<div className="w-full flex flex-col justify-center items-center">
-				<div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" />
+				<div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-slate-100 align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" />
 				{(() => {
 					if (message) {
-						return <span>{message}</span>
+						return <span className="text-slate-100">{message}</span>
 					}
 
 					return null
